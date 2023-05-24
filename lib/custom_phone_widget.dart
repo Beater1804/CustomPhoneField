@@ -8,7 +8,7 @@ enum VerifyPhoneState { valid, empty, invalid }
 
 class CustomPhoneWidget extends StatefulWidget {
   final TextEditingController phoneController;
-  final List<String>? countries;
+  final List<Country>? countries;
   final VerifyPhoneState isValid;
   final double paddingHoz;
   final double paddingVer;
