@@ -101,7 +101,7 @@ class _CustomPhoneWidgetState extends State<CustomPhoneWidget> {
     super.initState();
     _countryList = widget.countries == null
         ? listCountry
-        : listCountry.where((country) => widget.countries!.contains(country.countryISOCode)).toList();
+        : widget.countries!;
     filteredCountries = _countryList;
     number = widget.initialValue ?? '';
     if (widget.initialCountryCode == null && number.startsWith('+')) {
